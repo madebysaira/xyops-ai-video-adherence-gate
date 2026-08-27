@@ -1,0 +1,65 @@
+{
+  "type": "xypdf",
+  "version": "1.0",
+  "xyops": "1.0.0",
+  "description": "xyOps Portable Data",
+  "items": [
+    {
+      "type": "plugin",
+      "data": {
+        "id": "madebysaira/xyops-ai-video-adherence-gate",
+        "title": "AI Video Adherence Gate",
+        "type": "event",
+        "enabled": true,
+        "command": "uvx -y git+https://github.com/madebysaira/xyops-ai-video-adherence-gate@v1.0.0",
+        "script": "",
+        "icon": "video",
+        "notes": "Post-render AI-video quality gate: runs a rendered clip through AIVideoAdherenceGate (motion, morph-drift, lip-sync) and returns pass/warn/fail codes (0/1/2).",
+        "params": [
+          {
+            "id": "video_path",
+            "title": "Video Path",
+            "type": "text",
+            "required": false,
+            "value": ""
+          },
+          {
+            "id": "prompt",
+            "title": "Creative Contract Prompt",
+            "type": "text",
+            "required": false,
+            "value": ""
+          },
+          {
+            "id": "vision_key",
+            "title": "Vision API Key (optional)",
+            "type": "text",
+            "required": false,
+            "value": ""
+          },
+          {
+            "id": "vision_base_url",
+            "title": "Vision Base URL (optional)",
+            "type": "text",
+            "required": false,
+            "value": ""
+          },
+          {
+            "id": "vision_model",
+            "title": "Vision Model",
+            "type": "text",
+            "required": false,
+            "value": "gpt-4o-mini"
+          },
+          {
+            "id": "strict",
+            "title": "Strict (warn = fail)",
+            "type": "checkbox",
+            "required": false,
+            "value": false
+          }
+        ]
+      }
+    }
+  ]
+}
