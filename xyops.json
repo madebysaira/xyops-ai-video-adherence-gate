@@ -11,7 +11,7 @@
         "title": "AI Video Adherence Gate",
         "type": "event",
         "enabled": true,
-        "command": "uvx -y git+https://github.com/madebysaira/xyops-ai-video-adherence-gate@v1.0.0",
+        "command": "uvx --from git+https://github.com/madebysaira/xyops-ai-video-adherence-gate@v1.0.1 ai-video-adherence-gate",
         "script": "",
         "icon": "video",
         "notes": "Post-render AI-video quality gate: runs a rendered clip through AIVideoAdherenceGate (motion, morph-drift, lip-sync) and returns pass/warn/fail codes (0/1/2).",

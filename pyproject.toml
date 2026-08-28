@@ -4,10 +4,10 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "xyops-ai-video-adherence-gate"
-version = "1.0.0"
+version = "1.0.1"
 description = "xyOps Event Plugin: post-render AI-video quality gate (motion, morph, lip-sync) via AIVideoAdherenceGate."
 readme = "README.md"
-requires-python = ">=3.8"
+requires-python = ">=3.10"
 license = { text = "MIT" }
 authors = [{ name = "madebysaira" }]
 keywords = ["xyops", "ai-video", "quality-gate", "ffmpeg", "plugin"]

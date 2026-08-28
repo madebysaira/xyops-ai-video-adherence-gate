@@ -41,7 +41,20 @@ the plugin runs standalone — no separate `pip install` required.
 3. Ensure `python3` and `ffmpeg`/`ffprobe` are on `PATH` on the target satellite.
 4. In the xyOps UI, create an **Event** using a custom command, e.g.
    `python3 /opt/xyops/plugins/ai-video-adherence-gate/xyops_ai_video_adherence_gate/plugin.py`
-   — or register it as a custom Event Plugin via your plugin manifest.
+
+## Install (xyOps Marketplace / uvx)
+
+xyOps launches the plugin with a self-contained download+run command. The published
+command is:
+
+```bash
+uvx --from git+https://github.com/madebysaira/xyops-ai-video-adherence-gate@v1.0.1 ai-video-adherence-gate
+```
+
+`uvx` (Astral uv) builds the wheel on the fly, installs the `ai-video-adherence-gate`
+console script, and runs it. `main_cli` is the entry point referenced by
+`pyproject.toml` (`[project.scripts]`), so the published wheel is self-contained.
+You can also register it as a custom Event Plugin via your plugin manifest.
 
 ## Event parameters
 
