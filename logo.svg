@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+  <!-- AI Video Adherence Gate plugin icon -->
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1e293b"/>
+      <stop offset="1" stop-color="#0f172a"/>
+    </linearGradient>
+  </defs>
+  <!-- rounded square background -->
+  <rect x="4" y="4" width="120" height="120" rx="24" fill="url(#bg)" stroke="#334155" stroke-width="2"/>
+  <!-- gauge arc: track -->
+  <path d="M 30 88 A 36 36 0 1 1 98 88" fill="none" stroke="#334155" stroke-width="7" stroke-linecap="round"/>
+  <!-- gauge arc: pass segment (emerald) -->
+  <path d="M 30 88 A 36 36 0 0 1 44 52" fill="none" stroke="#10b981" stroke-width="7" stroke-linecap="round"/>
+  <!-- gauge arc: warn segment (amber) -->
+  <path d="M 44 52 A 36 36 0 0 1 98 88" fill="none" stroke="#f59e0b" stroke-width="7" stroke-linecap="round"/>
+  <!-- white play triangle -->
+  <path d="M 54 50 L 54 78 Q 54 80.5 56.1 79.2 L 80.5 64.9 Q 82.5 63.7 80.5 62.5 L 56.1 48.8 Q 54 47.6 54 50 Z" fill="#f8fafc"/>
+</svg>
